@@ -25,11 +25,16 @@ public class Topico {
     @Enumerated(EnumType.STRING)
     private Estado estado;
 
+    private String curso;
+    private String autor;
+
     public Topico(DatosRegistroTopico datosRegistroTopico){
         this.titulo = datosRegistroTopico.titulo();
         this.mensaje = datosRegistroTopico.mensaje();
         this.fechaCreacion = LocalDateTime.now();
         this.estado = Estado.ABIERTO;
+        this.curso = datosRegistroTopico.curso();
+        this.autor = datosRegistroTopico.autor();
     }
 
     public void actualizarTopico(DatosActualizarTopico datosActualizarTopico){
@@ -37,6 +42,8 @@ public class Topico {
             this.titulo = datosActualizarTopico.titulo();
             this.mensaje = datosActualizarTopico.mensaje();
             this.estado = datosActualizarTopico.estado();
+            this.curso = datosActualizarTopico.curso();
+            this.autor = datosActualizarTopico.autor();
         }
     }
 }
