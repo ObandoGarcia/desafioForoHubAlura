@@ -8,6 +8,12 @@ public record DatosRegistroTopico(
         String titulo,
 
         @NotBlank
-        String mensaje
+        String mensaje,
+
+        @NotBlank
+        String curso,
+
+        @NotBlank
+        String autor
 ) {
 }

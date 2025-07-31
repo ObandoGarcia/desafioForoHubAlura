@@ -28,7 +28,9 @@ public class TopicoController {
                 topico.getTitulo(),
                 topico.getMensaje(),
                 topico.getFechaCreacion(),
-                topico.getEstado());
+                topico.getEstado(),
+                topico.getCurso(),
+                topico.getAutor());
 
         return ResponseEntity.ok().body(datosRespuestaTopico);
     }
@@ -46,7 +48,9 @@ public class TopicoController {
                 topico.getTitulo(),
                 topico.getMensaje(),
                 topico.getFechaCreacion(),
-                topico.getEstado());
+                topico.getEstado(),
+                topico.getCurso(),
+                topico.getAutor());
 
         return ResponseEntity.ok(datosRespuestaTopico);
     }
@@ -63,7 +67,9 @@ public class TopicoController {
                     topico.getTitulo(),
                     topico.getMensaje(),
                     topico.getFechaCreacion(),
-                    topico.getEstado()));
+                    topico.getEstado(),
+                    topico.getCurso(),
+                    topico.getAutor()));
     }
 
     @DeleteMapping("/{id}")

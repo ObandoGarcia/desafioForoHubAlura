@@ -7,14 +7,18 @@ public record DatosListadoTopicos(
         String titulo,
         String mensaje,
         LocalDateTime fechaCreacion,
-        String estado
+        String estado,
+        String curso,
+        String autor
 ) {
     public DatosListadoTopicos(Topico topico){
         this(topico.getId(),
                 topico.getTitulo(),
                 topico.getMensaje(),
                 topico.getFechaCreacion(),
-                topico.getEstado().toString()
+                topico.getEstado().toString(),
+                topico.getCurso(),
+                topico.getAutor()
         );
     }
 }

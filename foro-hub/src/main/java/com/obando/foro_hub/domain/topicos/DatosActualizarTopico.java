@@ -1,17 +1,25 @@
 package com.obando.foro_hub.domain.topicos;
 
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-
-import java.time.LocalDateTime;
 
 public record DatosActualizarTopico(
 
         @NotNull
         Long id,
 
+        @NotBlank
         String titulo,
+
+        @NotBlank
         String mensaje,
-        LocalDateTime fechaCreacion,
-        Estado estado
+
+        Estado estado,
+
+        @NotBlank
+        String curso,
+
+        @NotBlank
+        String autor
 ) {
 }
