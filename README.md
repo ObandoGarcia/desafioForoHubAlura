@@ -1,5 +1,6 @@
+# Desafio Foro Hub Alura
+Desarollo de aplicacion para gestionar un foro aplicando buenas practicas, ademas de implementacion de Spring Security JWT
 
-<h1>Proyecto de ForoHub de Alura</h1>
 <div>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="60" alt="java logo"  />
   <img width="12" />
@@ -45,9 +46,8 @@
 
 ###
 
-<p">El usuario de la aplicacion debe iniciar en la ruta "/login" para poder generar un token que servira para poder acceder a las demas partes del sistema.<br><br>Una vez generado la aplicación hará validaciones necesarios para verificar la validez del token y tiempo de expiración. <br><br>En cuanto a los Topicos se creo un CRUD. Para ingresar a este el usuario debe ingresar a la ruta "/topicos", previmente habiendo ingresado a "/login"para generar el token de seguridad.</p>
+<p>El usuario de la aplicacion debe iniciar en la ruta "/login" para poder generar un token que servira para poder acceder a las demas partes del sistema.<br><br>Una vez generado la aplicación hará validaciones necesarios para verificar la validez del token y tiempo de expiración. <br><br>En cuanto a los Topicos se creo un CRUD. Para ingresar a este el usuario debe ingresar a la ruta "/topicos", previmente habiendo ingresado a "/login"para generar el token de seguridad.</p>
 
 ###
 
-# Desafio Foro Hub Alura
-Desarollo de aplicacion para gestionar un foro aplicando buenas practicas, ademas de implementacion de Spring Security JWT
+
